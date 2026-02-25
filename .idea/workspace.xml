@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="149ad09b-255c-4592-a13f-7771c975cf9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/CreateCourierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/DeleteCourierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/LoginCourierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/Courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/CourierId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/OrderId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/OrderList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/SingleOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/AcceptOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/CreateOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/GetOrderByIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/GetOrdersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/steps/CourierSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/steps/OrderSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="39lF380K2sMdnntunH35ebgrtkj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AcceptOrderTest.acceptOrderAndCheckStatus.executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (1).executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (2).executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus.executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithWrongOrderIdAndCheckStatus.executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithoutCourierIdAndCheckStatus.executor": "Run",
+    "JUnit.AcceptOrderTest.acceptOrderWithoutOrderIdAndCheckStatus.executor": "Run",
+    "JUnit.AcceptOrderTest.getOrderByIdWithoutIdAndCheckStatus.executor": "Run",
+    "JUnit.CreateCourierTest.createDuplicateCourierAndCheckStatus.executor": "Run",
+    "JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus (1).executor": "Run",
+    "JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus.executor": "Run",
+    "JUnit.CreateCourierTest.createNewPlaceAndCheckResponse.executor": "Run",
+    "JUnit.CreateCourierTest.executor": "Run",
+    "JUnit.CreateCourierTest.getMyInfoStatusCode.executor": "Run",
+    "JUnit.CreateOrderTest.createOrderAndCheckStatus (1).executor": "Debug",
+    "JUnit.CreateOrderTest.createOrderAndCheckStatus.executor": "Run",
+    "JUnit.DeleteCourierTest.deleteCourierAndCheckStatus.executor": "Run",
+    "JUnit.DeleteCourierTest.deleteCourierWithoutIdAndCheckStatus.executor": "Run",
+    "JUnit.DeleteCourierTest.deleteNonexistentCourierAndCheckStatus.executor": "Run",
+    "JUnit.GetOrderByIdTest.executor": "Run",
+    "JUnit.GetOrderByIdTest.getOrderByIdAndCheckStatus.executor": "Debug",
+    "JUnit.GetOrderByIdTest.getOrderByIdWithWrongIdAndCheckStatus.executor": "Run",
+    "JUnit.GetOrderByIdTest.getOrderByIdWithoutIdAndCheckStatus.executor": "Run",
+    "JUnit.GetOrdersTest.getOrdersAndCheckStatus.executor": "Run",
+    "JUnit.LoginCourierTest.executor": "Run",
+    "JUnit.LoginCourierTest.loginCourierAndCheckStatus.executor": "Run",
+    "JUnit.LoginCourierTest.loginWithIncompleteCourierDataAndCheckStatus.executor": "Run",
+    "JUnit.LoginCourierTest.loginWithNonexistentCourierAndCheckStatus.executor": "Run",
+    "Maven.Sprint_7 [clean].executor": "Run",
+    "Maven.Sprint_7 [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Svetlana/Projects/Yandex Practicum/GIT/Sprint_7/src/test/java/dataObjects",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dataObjects" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GetOrdersTest.getOrdersAndCheckStatus">
+    <configuration name="AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.AcceptOrderTest" />
+      <option name="METHOD_NAME" value="acceptOrderWithWrongCourierIdAndCheckStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptOrderTest.acceptOrderWithWrongOrderIdAndCheckStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.AcceptOrderTest" />
+      <option name="METHOD_NAME" value="acceptOrderWithWrongOrderIdAndCheckStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptOrderTest.acceptOrderWithoutCourierIdAndCheckStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.AcceptOrderTest" />
+      <option name="METHOD_NAME" value="acceptOrderWithoutCourierIdAndCheckStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptOrderTest.acceptOrderWithoutOrderIdAndCheckStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.AcceptOrderTest" />
+      <option name="METHOD_NAME" value="acceptOrderWithoutOrderIdAndCheckStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderBodyTest.createOrderAndCheckStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.CreateOrderBodyTest" />
+      <option name="METHOD_NAME" value="createOrderAndCheckStatus(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderTest.createOrderAndCheckStatus (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.CreateOrderTest" />
+      <option name="METHOD_NAME" value="createOrderAndCheckStatus(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrdersTest.getOrdersAndCheckStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicum.yandex.ru.orderTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicum.yandex.ru.orderTests" />
+      <option name="MAIN_CLASS_NAME" value="practicum.yandex.ru.orderTests.GetOrdersTest" />
+      <option name="METHOD_NAME" value="getOrdersAndCheckStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GetOrdersTest.getOrdersAndCheckStatus" />
+        <item itemvalue="JUnit.AcceptOrderTest.acceptOrderWithoutOrderIdAndCheckStatus" />
+        <item itemvalue="JUnit.AcceptOrderTest.acceptOrderWithWrongOrderIdAndCheckStatus" />
+        <item itemvalue="JUnit.AcceptOrderTest.acceptOrderWithoutCourierIdAndCheckStatus" />
+        <item itemvalue="JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="149ad09b-255c-4592-a13f-7771c975cf9b" name="Changes" comment="" />
+      <created>1771262550465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771262550465</updated>
+    </task>
+    <servers />
+  </component>
+</project>
