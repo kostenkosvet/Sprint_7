@@ -90,4 +90,24 @@ public class OrderSteps {
         return response.getBody().as(SingleOrder.class);
     }
 
+    @Step("Cancel order request")
+    public static void sendCancelOrder(Integer orderTrack) {
+        given()
+                .header("Content-type", "application/json")
+                .and()
+                .params("track", orderTrack)
+                .when()
+                .put(ORDER_API + "/cancel/");
+    }
+
+    @Step("Finish order request")
+    public static void sendFinishOrder(Integer id) {
+        given()
+                .header("Content-type", "application/json")
+                .and()
+                .params("id", id)
+                .when()
+                .put(ORDER_API + "/finish/");
+    }
+
 }

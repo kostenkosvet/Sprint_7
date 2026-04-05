@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="149ad09b-255c-4592-a13f-7771c975cf9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/CreateCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/DeleteCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/LoginCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/CourierId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/OrderId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/OrderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/dataObjects/SingleOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/AcceptOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/CreateOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/GetOrderByIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/orderTests/GetOrdersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/steps/CourierSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/steps/OrderSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/LoginCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practicum/yandex/ru/courierTests/LoginCourierTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,52 +32,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AcceptOrderTest.acceptOrderAndCheckStatus.executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (1).executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (2).executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus.executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithWrongOrderIdAndCheckStatus.executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithoutCourierIdAndCheckStatus.executor": "Run",
-    "JUnit.AcceptOrderTest.acceptOrderWithoutOrderIdAndCheckStatus.executor": "Run",
-    "JUnit.AcceptOrderTest.getOrderByIdWithoutIdAndCheckStatus.executor": "Run",
-    "JUnit.CreateCourierTest.createDuplicateCourierAndCheckStatus.executor": "Run",
-    "JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus (1).executor": "Run",
-    "JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus.executor": "Run",
-    "JUnit.CreateCourierTest.createNewPlaceAndCheckResponse.executor": "Run",
-    "JUnit.CreateCourierTest.executor": "Run",
-    "JUnit.CreateCourierTest.getMyInfoStatusCode.executor": "Run",
-    "JUnit.CreateOrderTest.createOrderAndCheckStatus (1).executor": "Debug",
-    "JUnit.CreateOrderTest.createOrderAndCheckStatus.executor": "Run",
-    "JUnit.DeleteCourierTest.deleteCourierAndCheckStatus.executor": "Run",
-    "JUnit.DeleteCourierTest.deleteCourierWithoutIdAndCheckStatus.executor": "Run",
-    "JUnit.DeleteCourierTest.deleteNonexistentCourierAndCheckStatus.executor": "Run",
-    "JUnit.GetOrderByIdTest.executor": "Run",
-    "JUnit.GetOrderByIdTest.getOrderByIdAndCheckStatus.executor": "Debug",
-    "JUnit.GetOrderByIdTest.getOrderByIdWithWrongIdAndCheckStatus.executor": "Run",
-    "JUnit.GetOrderByIdTest.getOrderByIdWithoutIdAndCheckStatus.executor": "Run",
-    "JUnit.GetOrdersTest.getOrdersAndCheckStatus.executor": "Run",
-    "JUnit.LoginCourierTest.executor": "Run",
-    "JUnit.LoginCourierTest.loginCourierAndCheckStatus.executor": "Run",
-    "JUnit.LoginCourierTest.loginWithIncompleteCourierDataAndCheckStatus.executor": "Run",
-    "JUnit.LoginCourierTest.loginWithNonexistentCourierAndCheckStatus.executor": "Run",
-    "Maven.Sprint_7 [clean].executor": "Run",
-    "Maven.Sprint_7 [test].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Svetlana/Projects/Yandex Practicum/GIT/Sprint_7/src/test/java/dataObjects",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pathVariables"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AcceptOrderTest.acceptOrderAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithWrongCourierIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithWrongOrderIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithoutCourierIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.acceptOrderWithoutOrderIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AcceptOrderTest.getOrderByIdWithoutIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.createDuplicateCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.createIncompleteCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.createNewPlaceAndCheckResponse.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCourierTest.getMyInfoStatusCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateOrderTest.createOrderAndCheckStatus (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CreateOrderTest.createOrderAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeleteCourierTest.deleteCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeleteCourierTest.deleteCourierWithoutIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DeleteCourierTest.deleteNonexistentCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrderByIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrderByIdTest.getOrderByIdAndCheckStatus.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.GetOrderByIdTest.getOrderByIdWithWrongIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrderByIdTest.getOrderByIdWithoutIdAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrdersTest.getOrdersAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginCourierTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginCourierTest.loginCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginCourierTest.loginWithIncompleteCourierDataAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginCourierTest.loginWithNonexistentCourierAndCheckStatus.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint_7 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint_7 [test].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Svetlana/Projects/Yandex Practicum/GIT/Sprint_7/src/test/java/dataObjects&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="dataObjects" />

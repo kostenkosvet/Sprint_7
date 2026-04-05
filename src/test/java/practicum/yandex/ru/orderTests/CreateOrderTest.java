@@ -7,6 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import practicum.yandex.ru.BaseTest;
 import practicum.yandex.ru.dataObjects.Order;
+import practicum.yandex.ru.dataObjects.OrderId;
 
 import static org.hamcrest.Matchers.isA;
 import static practicum.yandex.ru.steps.OrderSteps.sendCreateOrderRequest;
@@ -46,6 +47,7 @@ public class CreateOrderTest extends BaseTest {
         }
 
         Response response = sendCreateOrderRequest(order);
+        super.orderId = response.getBody().as(OrderId.class);
         response.then()
                 .assertThat().body("track", isA(Integer.class))
                 .and()

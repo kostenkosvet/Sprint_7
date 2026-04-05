@@ -33,9 +33,9 @@ public class CreateCourierTest extends BaseTest {
     @DisplayName("Create user without required fields")
         //   @Description("Create user without required fields - 400 error")
     void createIncompleteCourierAndCheckStatus(String login, String password, String firstname) {
-        Courier courier = new Courier(login, password, firstname);
+        super.courier = new Courier(login, password, firstname);
 
-        Response response = sendCreateCourierRequest(courier);
+        Response response = sendCreateCourierRequest(super.courier);
         response.then()
                 .assertThat().body("message", equalTo("Недостаточно данных для создания учетной записи"))
                 .and()
@@ -46,13 +46,13 @@ public class CreateCourierTest extends BaseTest {
     @MethodSource("duplicateUser")
     void createDuplicateCourierAndCheckStatus(String login1, String password1, String firstname1,
                                               String login2, String password2, String firstname2) {
-        Courier courier = new Courier(login1, password1, firstname1);
+        super.courier = new Courier(login1, password1, firstname1);
 
-        sendCreateCourierRequest(courier);
+        sendCreateCourierRequest(super.courier);
 
-        courier = new Courier(login2, password2, firstname2);
+        super.courier = new Courier(login2, password2, firstname2);
 
-        Response response = sendCreateCourierRequest(courier);
+        Response response = sendCreateCourierRequest(super.courier);
 
         response.then()
                 .assertThat().body("message", equalTo("Этот логин уже используется"))
@@ -62,9 +62,9 @@ public class CreateCourierTest extends BaseTest {
 
     @Test
     void createCourierAndCheckStatus() {
-        Courier courier = new Courier("Practicum", "123", "Svetlana");
+        super.courier = new Courier("Practicum", "123", "Svetlana");
 
-        Response response = sendCreateCourierRequest(courier);
+        Response response = sendCreateCourierRequest(super.courier);
 
         response.then().assertThat().body("ok", equalTo(true))
                 .and()

@@ -47,4 +47,10 @@ public class CourierSteps {
         Response response = sendLoginRequest(courier);
         return response.getBody().as(CourierId.class);
     }
+
+    @Step("Get existing Courier id")
+    public static CourierId getCourierId(Courier courier) {
+        Response response = sendLoginRequest(courier);
+        return response.getBody().as(CourierId.class);
+    }
 }

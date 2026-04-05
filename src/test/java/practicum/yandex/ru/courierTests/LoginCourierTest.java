@@ -27,7 +27,7 @@ public class LoginCourierTest extends BaseTest {
     @DisplayName("Login courier without required fields")
     @Description("Login courier without required fields - 400 error")
     void loginWithIncompleteCourierDataAndCheckStatus(String login, String password) {
-        Courier courier = new Courier(login, password, null);
+        super.courier = new Courier(login, password, null);
 
         Response response = sendLoginRequest(courier);
         response.then()
@@ -40,9 +40,9 @@ public class LoginCourierTest extends BaseTest {
     @DisplayName("Login courier")
     @Description("Basic test for Login courier")
     void loginCourierAndCheckStatus() {
-        Courier courier = new Courier("Practicum", "123", null);
+        super.courier = new Courier("Practicum", "123", null);
 
-        Response response = sendLoginRequest(courier);
+        Response response = sendLoginRequest(super.courier);
         response.then()
                 .assertThat().body("id", isA(Integer.class))
                 .and()
@@ -53,9 +53,9 @@ public class LoginCourierTest extends BaseTest {
     @DisplayName("Login courier with invalid data")
     @Description("Login courier with invalid data - 404 error")
     void loginWithNonexistentCourierAndCheckStatus() {
-        Courier courier = new Courier("Practicum55", "123", null);
+        super.courier = new Courier("Practicum55", "123", null);
 
-        Response response = sendLoginRequest(courier);
+        Response response = sendLoginRequest(super.courier);
         response.then()
                 .assertThat().body("message", equalTo("Учетная запись не найдена"))
                 .and()

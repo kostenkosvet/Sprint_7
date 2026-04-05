@@ -5,8 +5,6 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import practicum.yandex.ru.BaseTest;
-import practicum.yandex.ru.dataObjects.CourierId;
-import practicum.yandex.ru.dataObjects.SingleOrder;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -20,10 +18,10 @@ public class AcceptOrderTest extends BaseTest {
     @Description("Basic test for GET /api/v1/orders/accept/:id")
     void acceptOrderAndCheckStatus() {
 
-        SingleOrder singleOrder = getCreatedOrderInfo();
-        CourierId courierId = getCreatedCourierId();
+        super.singleOrder = getCreatedOrderInfo();
+        super.courierId = getCreatedCourierId();
 
-        Response response = sendAcceptOrderRequest(singleOrder.getOrder().getId(), courierId.getId());
+        Response response = sendAcceptOrderRequest(super.singleOrder.getOrder().getId(), super.courierId.getId());
 
         response.then().assertThat().body("ok", equalTo(true))
                 .and()
@@ -34,9 +32,9 @@ public class AcceptOrderTest extends BaseTest {
     @DisplayName("Accept order with wrong courier id")
     @Description("Test for GET /api/v1/orders/accept/:id with Wrong Courier id - 404 error")
     void acceptOrderWithWrongCourierIdAndCheckStatus() {
-        SingleOrder singleOrder = getCreatedOrderInfo();
+        super.singleOrder = getCreatedOrderInfo();
 
-        Response response = sendAcceptOrderRequest(singleOrder.getOrder().getId(), 1234545432);
+        Response response = sendAcceptOrderRequest(super.singleOrder.getOrder().getId(), 1234545432);
 
         response.then()
                 .assertThat().body("message", equalTo("Курьера с таким id не существует"))
@@ -49,12 +47,12 @@ public class AcceptOrderTest extends BaseTest {
     @Description("Test for GET /api/v1/orders/accept/:id without courier id - 400 error")
     void acceptOrderWithoutCourierIdAndCheckStatus() {
 
-        SingleOrder singleOrder = getCreatedOrderInfo();
+        super.singleOrder = getCreatedOrderInfo();
 
         Response response = given()
                 .header("Content-type", "application/json")
                 .when()
-                .put(ORDER_API + "/accept/" + singleOrder.getOrder().getId());
+                .put(ORDER_API + "/accept/" + super.singleOrder.getOrder().getId());
 
         response.then()
                 .assertThat().body("message", equalTo("Недостаточно данных для поиска"))
@@ -67,9 +65,9 @@ public class AcceptOrderTest extends BaseTest {
     @Description("Test for GET /api/v1/orders/accept/:id with nonexistent order id - 404 error")
     void acceptOrderWithWrongOrderIdAndCheckStatus() {
 
-        CourierId courierId = getCreatedCourierId();
+        super.courierId = getCreatedCourierId();
 
-        Response response = sendAcceptOrderRequest(1234545432, courierId.getId());
+        Response response = sendAcceptOrderRequest(1234545432, super.courierId.getId());
 
         response.then()
                 .assertThat().body("message", equalTo("Заказа с таким id не существует"))
@@ -82,12 +80,12 @@ public class AcceptOrderTest extends BaseTest {
     @Description("Test for GET /api/v1/orders/accept/:id without order id - 400 error")
     void acceptOrderWithoutOrderIdAndCheckStatus() {
 
-        CourierId courierId = getCreatedCourierId();
+        super.courierId = getCreatedCourierId();
 
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
-                .params("courierId", courierId.getId())
+                .params("courierId", super.courierId.getId())
                 .when()
                 .put(ORDER_API + "/accept/");
 

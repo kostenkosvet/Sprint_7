@@ -34,9 +34,9 @@ public class GetOrderByIdTest extends BaseTest {
         Order order = new Order(firstName, lastName, address, metroStation, phone, rentTime, deliveryDate, comment);
 
         Response response = sendCreateOrderRequest(order);
-        OrderId orderId = response.getBody().as(OrderId.class);
+        super.orderId = response.getBody().as(OrderId.class);
 
-        response = sendGetOrderByIdRequest(orderId.getTrack());
+        response = sendGetOrderByIdRequest(super.orderId.getTrack());
         SingleOrder singleOrder = response.getBody().as(SingleOrder.class);
 
         assertThat(singleOrder.getOrder().getId(), is(instanceOf(Integer.class)));
@@ -48,7 +48,7 @@ public class GetOrderByIdTest extends BaseTest {
         assertEquals(rentTime, singleOrder.getOrder().getRentTime());
         assertTrue(singleOrder.getOrder().getDeliveryDate().contains(deliveryDate));
         assertEquals(comment, singleOrder.getOrder().getComment());
-        assertEquals(orderId.getTrack(), singleOrder.getOrder().getTrack());
+        assertEquals(super.orderId.getTrack(), singleOrder.getOrder().getTrack());
         assertNull(singleOrder.getOrder().getColor());
         assertThat(singleOrder.getOrder().isCancelled(), is(instanceOf(Boolean.class)));
         assertThat(singleOrder.getOrder().isFinished(), is(instanceOf(Boolean.class)));
