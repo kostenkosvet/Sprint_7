@@ -1,3 +1,32 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# ========================
+# IntelliJ IDEA
+# ========================
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ========================
+# Build directories
+# ========================
+target/
+build/
+
+# ========================
+# Maven
+# ========================
+.log
+dependency-reduced-pom.xml
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Exceptions (НЕ игнорировать)
+# ========================
+!target/allure-results/
+!target/allure-results/**
